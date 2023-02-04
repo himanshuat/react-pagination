@@ -22,7 +22,6 @@ function App() {
 			const res = await fetch('https://randomuser.me/api/?results=150');
 			const resData = await res.json();
 			setUsersData(resData.results);
-			console.log(usersData);
 		};
 		fetchUsers();
 	}, []);

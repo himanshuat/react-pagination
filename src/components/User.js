@@ -3,8 +3,7 @@ import { useState } from "react";
 function User(props) {
     const [viewDetials, setViewDetails] = useState(false);
     const DOB = new Date(props.dob.date);
-
-    console.log(props);
+    
     function handleClick() {
         setViewDetails(!viewDetials);
     }
