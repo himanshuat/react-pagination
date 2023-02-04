@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    letter-spacing: .5px;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --primary: #FFF;
+    --secondary: #EEE;
+    --accent: #FD5E53;
+    --font-clr: #000;
+}
+
+body {
+    color: var(--font-clr);
+    background-color: var(--primary);
+}
+
+main {
+    position: relative;
+    min-height: 100vh;
+}
+
+section {
+    padding: 2rem;
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.user-card {
+    border-radius: .5rem;
+    background-color: var(--primary);
+    box-shadow: 0 0 .75rem var(--secondary);
+}
+
+.user-main {
+    padding: 2rem;
+    display: flex;
+    gap: .75rem;
+    flex-direction: column;
+}
+
+.user-details-container {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, .25);
+    align-items: center;
+    justify-content: center;
+}
+
+.user-details {
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: var(--primary);
+    display: flex;
+    gap: .75rem;
+    flex-direction: column;
+}
+
+.detail-label {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.btn {
+    font-size: .95rem;
+    padding: .7rem 1rem;
+    border: none;
+    color: var(--primary);
+    background-color: var(--accent);
+    cursor: pointer;
+}
+
+.btn:hover {
+    letter-spacing: 2px;
+}
+
+.paginationBttns {
+    margin: 2.5rem auto;
+    width: 80%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.paginationBttns a {
+    padding: .5rem;
+    margin: .7rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.paginationBttns a:hover {
+    color: var(--accent);
+}
+
+.paginationActive a {
+    color: var(--primary);
+    border-radius: 5px;
+    background-color: var(--accent);
+}
